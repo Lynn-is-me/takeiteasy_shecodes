@@ -1,0 +1,21 @@
+@font-face {
+    font-family: McLaren;
+    src: url(home\McLaren-Regular.ttf);
+}
+.home-img {
+    width: 90%;
+    height: 110%;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+}
+
+.policy {
+    cursor: pointer;
+    background-color: #a7b2fb;
+    color: #ffffff;
+    width: 120px;
+    height: 36.6px;
+    font-family: McLaren;
+    font-weight: bold;
+}

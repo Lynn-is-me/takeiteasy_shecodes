@@ -1,0 +1,67 @@
+@font-face {
+    font-family: McLaren;
+    src: url(McLaren-Regular.ttf);
+}
+/* NOTIFICATION */
+.notification-sidebar {
+
+    transform: translateX(0);
+    /* Điều chỉnh chiều rộng và các thuộc tính khác của sidebar ở đây */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng transition khi sidebar xuất hiện */
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+#showNotifications {
+    cursor: pointer;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notification-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    font-family: McLaren; /* Sử dụng font-family Merriweather Sans hoặc font-family bạn muốn */
+    font-size: 15px; /* Kích thước font 20px */
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 40px; /* Điều chỉnh kích thước avatar tùy ý */
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.notification-content {
+    flex: 1;
+}
